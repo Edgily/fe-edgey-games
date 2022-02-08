@@ -1,38 +1,116 @@
-.App {
+:root {
+  --raisin-black: #1f2232;
+  --coral-black: #596475;
+  --cameo-pink: #e3bac6;
+  --lavender-blush: #fde8e9;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono&display=swap");
+
+/* LOADING SPINNER */
+@import "spinner.css";
+
+* {
+  margin: 0;
+  padding: 0;
+
+  color: var(--raisin-black);
+  font-family: "Space Mono", monospace;
+  font-weight: 600;
+  font-size: 20px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: var(--cameo-pink);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.loading {
+  margin-top: 50px;
+
+  font-size: 2rem;
+  font-weight: 600;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.loading.hidden {
+  display: none;
 }
 
-.App-link {
-  color: #61dafb;
+header > h1 {
+  text-shadow: -2px 2px var(--lavender-blush);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+nav {
+  padding: 10px;
+  background-color: var(--raisin-black);
+}
+
+nav > a {
+  font-size: 1.2rem;
+  color: var(--lavender-blush);
+
+  transition: transform 0.2s ease-in-out;
+}
+
+nav > a:hover {
+  text-decoration: overline;
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.Header {
+}
+
+ul {
+  list-style-type: none;
+}
+
+.Reviews {
+}
+
+.Reviews li {
+  margin: 50px;
+  padding: 20px;
+
+  border: 2px dashed var(--raisin-black);
+  border-radius: 20px;
+
+  background-color: var(--lavender-blush);
+
+  transition: transform 0.1s ease-in-out;
+}
+
+.Reviews li:hover {
+  transform: scale(1.05, 1);
+}
+
+.Reviews img {
+  width: 100%;
+  max-width: 400px;
+  object-fit: cover;
+
+  border-radius: 20px;
+}
+
+.reviewLink {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--coral-black);
+}
+
+.reviewLink:hover {
+  color: var(--raisin-black);
 }
