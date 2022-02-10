@@ -123,10 +123,7 @@ export const Reviews = () => {
           return (
             <li className="box" key={review.review_id}>
               <Link to={`${review.review_id}`}>
-                <img
-                  src={review.review_img_url}
-                  alt="Colourful picture of the game"
-                />
+                <img src={review.review_img_url} alt="fun game" />
               </Link>
               <br />
               <Link to={`${review.review_id}`} className="reviewLink">
