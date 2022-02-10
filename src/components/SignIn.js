@@ -5,7 +5,7 @@ import { getUsers, postUser } from "../utils/api-utils";
 
 export const SignIn = () => {
   const navigate = useNavigate();
-  const { user, setUser } = useContext(UserContext);
+  const { setUser } = useContext(UserContext);
   const [users, setUsers] = useState();
   const [signInInput, setSignInInput] = useState("");
 

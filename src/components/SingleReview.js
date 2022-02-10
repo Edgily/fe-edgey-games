@@ -14,7 +14,7 @@ import { UserContext } from "../contexts/UserProvider";
 import { formatDate } from "../utils/formatDate";
 
 export const SingleReview = (props) => {
-  const { user, setUser } = useContext(UserContext);
+  const { user } = useContext(UserContext);
 
   const { review_id } = useParams();
   const [loading, setLoading] = useState();
@@ -42,7 +42,7 @@ export const SingleReview = (props) => {
         }
       })
       .then(() => setLoading(false));
-  }, []);
+  }, [review_id]);
 
   const handleChange = (event) => {
     setCommentState(event.target.value);

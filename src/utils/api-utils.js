@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const edgeyApi = axios.create({
-  baseURL: "https://edgey-games.herokuapp.com/api",
+  baseURL: "https://be-edgey-games.herokuapp.com/api",
 });
 
 // reviews?sort_by=designer&order=desc&category=social%deduction

@@ -2,7 +2,7 @@ import { useContext } from "react";
 import { UserContext } from "../contexts/UserProvider";
 
 export const Header = () => {
-  const { user, setUser } = useContext(UserContext);
+  const { user } = useContext(UserContext);
 
   return (
     <header>
