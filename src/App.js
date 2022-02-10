@@ -7,6 +7,7 @@ import { Header } from "./components/Header";
 import { Nav } from "./components/Nav";
 import { NotFound } from "./components/NotFound";
 import { Reviews } from "./components/Reviews";
+import { SignIn } from "./components/SignIn";
 import { SingleReview } from "./components/SingleReview";
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Reviews />} />
           <Route path="/:review_id" element={<SingleReview />} />
+          <Route path="/signin" element={<SignIn />} />
           <Route exact path="*" element={<NotFound />} />
         </Routes>
       </div>

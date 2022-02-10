@@ -1,0 +1,23 @@
+.filter {
+  margin: auto;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.Reviews li {
+  transition: transform 0.1s ease-in-out;
+}
+
+.Reviews li:hover {
+  transform: scale(1.05, 1);
+}
+
+.reviewLink {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--coral-black);
+}
+
+.reviewLink:hover {
+  color: var(--raisin-black);
+}
