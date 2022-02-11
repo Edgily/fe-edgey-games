@@ -17,21 +17,31 @@ export const SingleReview = (props) => {
   const { user } = useContext(UserContext);
 
   const { review_id } = useParams();
-  const [loading, setLoading] = useState();
-  const [review, setReview] = useState();
-  const [comments, setComments] = useState([]);
-  const [commentState, setCommentState] = useState("");
 
+  const [routeOkay, setRouteOkay] = useState(true);
+
+  const [loading, setLoading] = useState();
+
+  const [review, setReview] = useState();
   const [reviewVotes, setReviewVotes] = useState();
   const [clicked, setClicked] = useState(false);
+
+  const [comments, setComments] = useState([]);
+  const [commentState, setCommentState] = useState("");
 
   useEffect(() => {
     setLoading(true);
 
-    getReviewById(review_id).then((data) => {
-      setReview(data.review);
-      setReviewVotes(data.review.votes);
-    });
+    getReviewById(review_id)
+      .then((data) => {
+        setReview(data.review);
+        setReviewVotes(data.review.votes);
+      })
+      .catch((err) => {
+        if (err) {
+          setRouteOkay(false);
+        }
+      });
 
     getCommentsById(review_id)
       .then((data) => {
@@ -85,17 +95,14 @@ export const SingleReview = (props) => {
     if (clicked) {
       body = { inc_votes: -1 };
       setClicked(false);
+      setReviewVotes((currVotes) => currVotes - 1);
     } else {
       body = { inc_votes: 1 };
       setClicked(true);
+      setReviewVotes((currVotes) => currVotes + 1);
     }
 
-    patchReviewVotes(review_id, body).then((data) => {
-      getReviewById(review_id).then((data) => {
-        setReview(data.review);
-        setReviewVotes(data.review.votes);
-      });
-    });
+    patchReviewVotes(review_id, body);
   };
 
   // conditional display of page elements
@@ -194,7 +201,10 @@ export const SingleReview = (props) => {
 
   return (
     <main className="SingleReview">
-      <div className={`loading ${loading ? "" : " hidden"}`}>
+      <div className={routeOkay ? "hidden" : ""}>
+        <h1>404: Not Found</h1>
+      </div>
+      <div className={`loading ${loading && routeOkay ? "" : " hidden"}`}>
         <h1>Loading </h1>
 
         <div className="lds-ellipsis">
