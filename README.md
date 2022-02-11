@@ -29,7 +29,7 @@ This is a front end project using React done while studying at Northcoders! It s
 
 ### Clone
 
-On the repo main page near the top there is a bright green 'Code' button, click it. You then need to copy the URL displayed. In your terminal (command line), navigate to the folder where you wish to clone the project to. Then run the command 'git clone PROJECT_URL' e.g. 'git clone https://github.com/Edgily/fe-edgey-games'. This will install everything into an 'edgey-games' folder.
+On the repo main page near the top there is a bright green 'Code' button, click it. You then need to copy the URL displayed. In your terminal (command line), navigate to the folder where you wish to clone the project to. Then run the command 'git clone PROJECT_URL' e.g. 'git clone https://github.com/Edgily/fe-edgey-games'. This will install everything into an 'fe-edgey-games' folder.
 
 ### Install Dependencies
 
