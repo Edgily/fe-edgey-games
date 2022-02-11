@@ -10,6 +10,7 @@
 /* LOADING SPINNER */
 @import "spinner.css";
 
+@import "./styles/Header.css";
 @import "./styles/Reviews.css";
 @import "./styles/SingleReview.css";
 
@@ -23,22 +24,28 @@
   font-size: 16px;
   word-wrap: break-word;
   color: var(--raisin-black);
+
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
 }
 
 body {
   background-color: var(--cameo-pink);
 }
 
-header > h1 {
-  text-shadow: -2px 2px var(--lavender-blush);
+header > div > h1 {
+  text-shadow: -2px 3px var(--lavender-blush);
 }
 
 nav {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  width: 100%;
-  padding: 10px;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   background-color: var(--raisin-black);
 }
 
@@ -82,11 +89,10 @@ img {
 }
 
 .box {
-  margin: 50px;
+  margin: 20px;
   padding: 20px;
 
   border: 2px dashed var(--raisin-black);
-  border-radius: 20px;
 
   background-color: var(--lavender-blush);
 }
@@ -116,9 +122,8 @@ hr {
 input,
 button,
 select {
-  width: 300px;
+  width: 200px;
   padding: 5px;
-  border-radius: 20px;
   border: 4px solid var(--lavender-blush);
   border-style: outset;
 }

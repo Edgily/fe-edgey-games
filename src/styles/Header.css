@@ -1,0 +1,17 @@
+header {
+  background-color: var(--raisin-black);
+  border-radius: 0;
+}
+
+header > div {
+  background-color: var(--cameo-pink);
+  border-radius: 0;
+  border-bottom-left-radius: 30px;
+}
+
+.header-hr {
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 85%;
+}

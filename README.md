@@ -1,13 +1,48 @@
-omg dis r my own readme!!!!1!11111one!!!!
+# Edgey Games
 
-Hosted Heroku Back End:
-- https://be-edgey-games.herokuapp.com/api
+### Portfolio React Front End Project
 
-Hosted Netlify Front End:
+### Links to stuff:
+
+React Front End Project links:
+
 - https://fe-edgey-games.netlify.app/
+- https://github.com/Edgily/fe-edgey-games
 
-GitHub Back End:
+PSQL Back End Project links:
+
+- https://be-edgey-games.herokuapp.com/api
 - https://github.com/Edgily/be-edgey-games
 
-GitHub Front End:
-- https://github.com/Edgily/fe-edgey-games
+### Description
+
+omg dis r my own readme!!!!1!11111one!!!!
+
+This is a front end project using React done while studying at Northcoders! It sets up a basic reviews website utilizing the database created in my previous portfolio back end project.
+
+### Installation process:
+
+1. Clone
+2. Install Dependencies
+3. Run local server
+4. ??? Profit
+
+### Clone
+
+On the repo main page near the top there is a bright green 'Code' button, click it. You then need to copy the URL displayed. In your terminal (command line), navigate to the folder where you wish to clone the project to. Then run the command 'git clone PROJECT_URL' e.g. 'git clone https://github.com/Edgily/fe-edgey-games'. This will install everything into an 'edgey-games' folder.
+
+### Install Dependencies
+
+This project was made with (and may depend on):
+
+- node v17.1.0
+
+Navigate into the newly created 'edgey-games' folder in your terminal. In the terminal, run the command 'npm i' which will install all other dependencies.
+
+### Run Local Server
+
+Simply run the 'npm start' command to start a local development server so that you can see the project in full glory!
+
+### ??? Profit
+
+Thanks for checking out my project! Now you can mess around with the site to your hearts content!
