@@ -8,7 +8,7 @@
 }
 
 .Reviews li:hover {
-  transform: skew(-2deg, 0deg);
+  transform: scale(1.01);
 }
 
 .reviewLink {
