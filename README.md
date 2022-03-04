@@ -16,8 +16,6 @@ PSQL Back End Project links:
 
 ### Description
 
-omg dis r my own readme!!!!1!11111one!!!!
-
 This is a front end project using React done while studying at Northcoders! It sets up a basic reviews website utilizing the database created in my previous portfolio back end project.
 
 ### Installation process:
