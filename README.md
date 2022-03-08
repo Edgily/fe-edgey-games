@@ -1,18 +1,6 @@
-# Edgey Games
-
-### Portfolio React Front End Project
-
-### Links to stuff:
-
-React Front End Project links:
-
+# <a href="https://fe-edgey-games.netlify.app/">Edgey Games</a>
 - https://fe-edgey-games.netlify.app/
-- https://github.com/Edgily/fe-edgey-games
 
-PSQL Back End Project links:
-
-- https://be-edgey-games.herokuapp.com/api
-- https://github.com/Edgily/be-edgey-games
 
 ### Description
 
